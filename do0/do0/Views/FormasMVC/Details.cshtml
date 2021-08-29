@@ -1,0 +1,58 @@
+﻿@model do0.Models.Formas
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Formas</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DiretorioItem.NomeDiretorio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiretorioItem.NomeDiretorio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NomeForma)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomeForma)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoForma)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoForma)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TamanhoPixels)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TamanhoPixels)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.FormasId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
